@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import styles from './App.module.css';
 
 class App extends Component {
   render() {
+    console.log('styles', styles);
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className={styles.container}>
+        <div className={styles.test0} style={{ color: 'lawngreen' }}>
+          This should be green, set by direct style
+        </div>
+        <div className={styles.test1}>
+          This should be green, set by definition in class of css module
+        </div>
+        <div className={styles.test2}>
+          This should be green, set by local custom property
+        </div>
+        <div className={styles.test3}>
+          This should be green, set by custom property from variables.json
+        </div>
+        <div>
+          This should be the default black
+        </div>
       </div>
     );
   }

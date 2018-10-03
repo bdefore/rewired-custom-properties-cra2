@@ -1,0 +1,25 @@
+:root {
+  --locallySetColor: 'lawngreen';
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.test0 {
+  /* do nothing */
+}
+
+.test1 {
+  color: lawngreen;
+}
+
+.test2 {
+  color: var(--locallySetColor);
+}
+
+.test3 {
+  color: var(--colorFromVariablesJson);
+}
