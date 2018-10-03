@@ -27,7 +27,7 @@ module.exports = function override(config, env) {
   // console.log('config', JSON.stringify(config, null, 2))
   // return
 
-  config = rewireCssModules(config, env)
+  // config = rewireCssModules(config, env)
 
   // console.log('config', JSON.stringify(config, null, 2))
 

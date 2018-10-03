@@ -1,5 +1,5 @@
 :root {
-  --locallySetColor: 'lawngreen';
+  --locallySetColor: lawngreen;
 }
 
 .container {
