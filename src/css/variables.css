@@ -1,0 +1,5 @@
+@custom-media --tabletMedium (max-width: 960px);
+
+:root {
+  --colorFromVariablesJson: lawngreen;
+}
